@@ -101,7 +101,7 @@ public class Jpa2ApplicationTests {
 	}
 
 	@Test
-	@Ignore
+	
 	public void OnetoMany() {
 
 //		BanJi banji = new BanJi();
@@ -124,9 +124,8 @@ public class Jpa2ApplicationTests {
 //		entityManager.persist(banji);
 //		entityManager.persist(stu1);
 //		entityManager.persist(stu2);
-		
-		
-		
+		Student object = (Student)entityManager.createQuery("select s from Student s where s.id= :sid").setParameter("sid", 1).getSingleResult();
+		System.err.println(object.toString());
 	}
 	@Test
 	@Ignore

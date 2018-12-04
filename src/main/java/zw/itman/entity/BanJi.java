@@ -52,10 +52,12 @@ public class BanJi {
 
 	@Override
 	public String toString() {
-		return "BanJi [id=" + id + ", name=" + name + ", studentList=" + studentList + ", getId()=" + getId()
-				+ ", getName()=" + getName() + ", getStudentList()=" + getStudentList() + ", getClass()=" + getClass()
-				+ ", hashCode()=" + hashCode() + ", toString()=" + super.toString() + "]";
+		return "BanJi [id=" + id + ", name=" + name + ", studentList=" + studentList + "]";
 	}
+
+	
+
+
 	
 	
 	
